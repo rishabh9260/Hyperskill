@@ -1,10 +1,21 @@
-package recognition;
-        import java.util.*;
+/*
+* @author Rishabh Jain
+* This is a simple program of digit recognition that recognizes if the digit is one or zero
+* using a simple neural network.
+* Enter 3 lines of input signifying a 3x3 grid. Input '_' to mark as empty or any other character to mark as highlighted.
+* Sample Input: _x_
+*               _x_
+*               __x
+*
+* This gives the output as one.
+*/
 
-public class Main {
+import java.util.*;
+
+public class RecogOneOrZero{
 
     public static void main(String[] args) {
-        int w1=2, w2=1, w3=2, w4=4, w5=-4, w6=4, w7=2, w8=-1, w9=2, b=-5;
+        int w1=2, w2=1, w3=2, w4=4, w5=-4, w6=4, w7=2, w8=-1, w9=2, b=-5;   //weights
         int a1, a2, a3, a4, a5, a6, a7, a8, a9, a10;
 
         Scanner sc = new Scanner(System.in);
@@ -74,5 +85,7 @@ public class Main {
         } else {
             System.out.println("This number is 1");
         }
+
+        sc.close();
     }
 }
